@@ -42,8 +42,8 @@
         <h2 class="text-center my-3">INGENIEUR DEVELOPPEMENT LOGICIEL et WEB</h2>
         <p class="text-center">Esprit d’analyse, rigueur, travail en équipe</p>
         <section class="row px-sm-5 mb-4">
-            <h3 class="text-center text-sm-left col-12 section-title justify-content-center justify-content-sm-start"> COMPÉTENCES</h3>
-            <table class="table table-striped">
+            <h3 id="competences" class="text-center text-sm-left col-12 section-title justify-content-center justify-content-sm-start"><i id="iCompetences" class="fa fa-arrow-circle-up"></i> COMPÉTENCES</h3>
+            <table id="tableCompetences" class="table table-striped">
                 <tbody>
                     <tr>
                         <th>Langages</th>
@@ -77,45 +77,47 @@
             </table>
         </section>
         <section class="row px-sm-5 mb-4">
-            <h3 class="text-center text-sm-left col-12 section-title justify-content-center justify-content-sm-start">EXPERIENCE PROFESSIONNELLE</h3>
-            <article class="card col-12 mb-2">
-                <div class="titre mb-1"><span>2019 : </span><span class="gras">AFORMAC</span>, Centre de formation, Montluçon 03</div>
-                <ul>
-                    <li><span class="gras">TITRE PROFESSIONNEL de DEVELOPPEUR WEB et WEB MOBILE</span></li>
-                    <p class="mb-1">Diplôme de niveau III validé par un Jury professionnel (840h en centre + 280h en stage)</p>
-                </ul>
-            </article>
-            <article class="card col-12 mb-2">
-                <div class="titre mb-1"><span>1999-2018 : </span><span class="gras">JULIE SOLUTIONS</span>, Editeur du logiciel, Croissy Beaubourg 77</div>
-                <ul>
-                    <li class="mb-1"><span class="gras">JULIE</span>, logiciel de gestion de cabinet dentaire, 10 ingénieurs et 5 testeurs</li>
-                    <p class="mb-1">Conception et développement en C/C++ sous Windows</p>
-                    <p class="mb-1">Ordonnancier et Certification HAS (Haute Autorité de Santé) avec le dictionnaire VIDAL</p>
-                    <p class="mb-1">Traçabilité des produits et de la stérilisation des instruments (liaison numérique avec les stérilisateurs)</p>
-                    <p class="mb-1">Gestion des fiches labo-prothèse et traçabilité des matériaux (liaison numérique avec les laboratoires de prothèse dentaire via le protocole FIDELA)</p>
-                    <p class="mb-1">Agenda, Comptabilité, Fiche patient</p>
-                </ul>
-            </article>
-            <article class="card col-12 mb-2">
-                <div class="titre mb-1"><span>1993-1999 : </span><span class="gras">CREDINTRANS</span>, (GAN CIC), Editeur de progiciels, Paris 75</div>
-                <ul>
-                    <li class="mb-1"><span class="gras">TDL</span>, progiciel de télédistribution de logiciels, 8 ingénieurs</li>
-                    <p class="mb-1">Conception et développement en C et Open Interface, en environnement hétérogène (AIX-UNIX, Windows NT, OS/2, VAX-VMS, MVS)</p>
-                </ul>
-            </article>
-            <article class="card col-12 mb-2">
-                <div class="titre mb-1"><span>1986-1993 : </span><span class="gras">SISRO</span>, Editeur de progiciels, 93 Montreuil</div>
-                <ul>
-                    <li class="mb-1"><span class="gras">HYPERTIME</span>, logiciel de suivi de dossiers sous WINDOWS, 4 ingénieurs</li>
-                    <p class="mb-1">Conception et développement en C-TALK/VIEWS</p>
-                    <li class="mb-1"><span class="gras">CORTEX-REDESIGN</span>, progiciel d'industrialisation de la production sous IBM 3090 MVS, 5 ingénieurs</li>
-                    <p class="mb-1">Conception/Réalisation en assembleur IBM 370</p>
-                </ul>
-            </article>
+            <h3 id="experiences" class="text-center text-sm-left col-12 section-title justify-content-center justify-content-sm-start"> <i id="iExperiences" class="fa fa-arrow-circle-up"></i>EXPERIENCE PROFESSIONNELLE</h3>
+            <div id="tableExperiences">
+                <article class="card col-12 mb-2">
+                    <div class="titre mb-1"><span>2019 : </span><span class="gras">AFORMAC</span>, Centre de formation, Montluçon 03</div>
+                    <ul>
+                        <li><span class="gras">TITRE PROFESSIONNEL de DEVELOPPEUR WEB et WEB MOBILE</span></li>
+                        <p class="mb-1">Diplôme de niveau III validé par un Jury professionnel (840h en centre + 280h en stage)</p>
+                    </ul>
+                </article>
+                <article class="card col-12 mb-2">
+                    <div class="titre mb-1"><span>1999-2018 : </span><span class="gras">JULIE SOLUTIONS</span>, Editeur du logiciel, Croissy Beaubourg 77</div>
+                    <ul>
+                        <li class="mb-1"><span class="gras">JULIE</span>, logiciel de gestion de cabinet dentaire, 10 ingénieurs et 5 testeurs</li>
+                        <p class="mb-1">Conception et développement en C/C++ sous Windows</p>
+                        <p class="mb-1">Ordonnancier et Certification HAS (Haute Autorité de Santé) avec le dictionnaire VIDAL</p>
+                        <p class="mb-1">Traçabilité des produits et de la stérilisation des instruments (liaison numérique avec les stérilisateurs)</p>
+                        <p class="mb-1">Gestion des fiches labo-prothèse et traçabilité des matériaux (liaison numérique avec les laboratoires de prothèse dentaire via le protocole FIDELA)</p>
+                        <p class="mb-1">Agenda, Comptabilité, Fiche patient</p>
+                    </ul>
+                </article>
+                <article class="card col-12 mb-2">
+                    <div class="titre mb-1"><span>1993-1999 : </span><span class="gras">CREDINTRANS</span>, (GAN CIC), Editeur de progiciels, Paris 75</div>
+                    <ul>
+                        <li class="mb-1"><span class="gras">TDL</span>, progiciel de télédistribution de logiciels, 8 ingénieurs</li>
+                        <p class="mb-1">Conception et développement en C et Open Interface, en environnement hétérogène (AIX-UNIX, Windows NT, OS/2, VAX-VMS, MVS)</p>
+                    </ul>
+                </article>
+                <article class="card col-12 mb-2">
+                    <div class="titre mb-1"><span>1986-1993 : </span><span class="gras">SISRO</span>, Editeur de progiciels, 93 Montreuil</div>
+                    <ul>
+                        <li class="mb-1"><span class="gras">HYPERTIME</span>, logiciel de suivi de dossiers sous WINDOWS, 4 ingénieurs</li>
+                        <p class="mb-1">Conception et développement en C-TALK/VIEWS</p>
+                        <li class="mb-1"><span class="gras">CORTEX-REDESIGN</span>, progiciel d'industrialisation de la production sous IBM 3090 MVS, 5 ingénieurs</li>
+                        <p class="mb-1">Conception/Réalisation en assembleur IBM 370</p>
+                    </ul>
+                </article>
+            </div>
         </section>
         <section class="row px-sm-5 mb-4">
-            <h3 class="text-center text-sm-left col-12 section-title justify-content-center justify-content-sm-start">FORMATION</h3>
-            <table class="table unbordered-table">
+            <h3 id="formation" class="text-center text-sm-left col-12 section-title justify-content-center justify-content-sm-start"><i id="iFormation" class="fa fa-arrow-circle-up"></i> FORMATION </h3>
+            <table id="tableFormation" class="table unbordered-table">
                 <tbody>
                     <tr>
                         <th>2019 <br />Montluçon</th>
@@ -137,6 +139,8 @@
             </table>
         </section>
     </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/script.js" type="text/javascript"></script>
 </body>
 
 </html>

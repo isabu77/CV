@@ -10,14 +10,6 @@ header ul li {
     list-style: none;
 }
 
-.logo {
-    width: 20%;
-}
-
-.mark {
-    width: 10%;
-}
-
 body .main {
     background-color: #FFFFFF;
 }
@@ -53,6 +45,12 @@ p {
 }
 
 @media(max-width:640px) {
+    .logo {
+        width: 8vw;
+    }
+    .mark {
+        width: 8vw;
+    }
     body .main h1 {
         font-size: 5vw;
         text-align: center;
@@ -91,6 +89,12 @@ p {
 }
 
 @media(min-width:641px) {
+    .logo {
+        width: 4vw;
+    }
+    .mark {
+        width: 2vw;
+    }
     .mobiletel {
         display: none;
     }
