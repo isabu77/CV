@@ -1,0 +1,112 @@
+body {
+    background-color: rgb(207, 201, 207);
+}
+
+header ul {
+    padding-inline-start: 0px;
+}
+
+header ul li {
+    list-style: none;
+}
+
+.logo {
+    width: 20%;
+}
+
+.mark {
+    width: 10%;
+}
+
+body .main {
+    background-color: #FFFFFF;
+}
+
+body .main h1 {
+    font-size: 1.5em;
+}
+
+body .main h2 {
+    text-align: center;
+    color: rgb(136, 115, 255);
+}
+
+body .main .adresse {
+    font-size: 1em;
+}
+
+body .main h3 {
+    color: rgb(136, 115, 255);
+}
+
+body .main .section-title {
+    display: flex;
+    align-items: center;
+}
+
+.gras {
+    font-weight: bold;
+}
+
+p {
+    font-size: small;
+}
+
+@media(max-width:640px) {
+    body .main h1 {
+        font-size: 5vw;
+        text-align: center;
+    }
+    body .main .adresse {
+        font-size: 4vw;
+        text-align: center;
+    }
+    body .main h2 {
+        font-size: 6vw;
+        text-align: center;
+        color: rgb(136, 115, 255);
+    }
+    body .main h3 {
+        font-size: 5vw;
+        color: rgb(136, 115, 255);
+    }
+    .desktoptel {
+        display: none;
+    }
+    .desktopmail {
+        display: none;
+    }
+    .mobiletel {
+        display: block;
+    }
+    .mobilemail {
+        display: block;
+    }
+    .mobile-titre {
+        display: block;
+    }
+    .desktop-titre {
+        display: none;
+    }
+}
+
+@media(min-width:641px) {
+    .mobiletel {
+        display: none;
+    }
+    .mobilemail {
+        display: none;
+    }
+    .desktoptel {
+        display: block;
+    }
+    .desktopmail {
+        display: block;
+    }
+    .mobile-titre {
+        display: none;
+    }
+    .desktop-titre {
+        display: block;
+    }
+}
